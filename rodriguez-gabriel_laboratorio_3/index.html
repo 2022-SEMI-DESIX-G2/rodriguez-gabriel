@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Laboratorio #3</title>
+</head>
+
+<body>
+    <header>
+        <h1>Laboratorio #3</h1>
+    </header>
+    <div>
+        <form id="palindromeForm">
+            <h2>1. Palindromo</h2>
+            <span>Ingrese un número para verificar si es palíndromo</span><br><br>
+            <input id="palindromeInput" type="number" name="palindromeInput" placeholder="012345789" required>
+            <input id="palindromeButton" type="button" value="Verificar">
+        </form>
+        <div>
+            <span>Respuesta</span>
+            <div>
+                <span>Numero ingresado: </span>
+                <input type="number" id="enteredNumber" disabled="disabled"> 
+            </div>
+            <div>
+                <span>Numero binario: </span>
+                <input type="number" id="binaryPalindrome" disabled="disabled"> 
+            </div>
+            <div>
+                <span>Verificacion: </span>
+                <input type="text" id="invertedPalindrome" disabled="disabled" style="width : 11%;"> 
+            </div>
+        </div>
+    </div>
+    <div>
+        <form id="charactersAmountFrom">
+            <h2>2. Caracteres</h2>
+            <span>Ingrese una palabra para verificar la cantidad de caracteres</span><br><br>
+            <input id="inputString" type="text" name="inputString" placeholder="JavaScript" required>
+            <input id="charactersAmountbutton" type="button" value="Verificar">
+        </form>
+        <div>
+            <span>Respuesta</span>
+            <div id="charactersResult"></div>
+        </div>
+    </div>
+    <div>
+        <form id="leapYearForm">
+            <h2>3. Año bisiesto</h2>
+            <span>Ingrese un año para verificar si es bisiesto</span><br><br>
+            <input id="leapYearInput" type="number" name="leapYearInput" placeholder="2022" required>
+            <input id="leapYearButton" type="button" value="Verificar">
+        </form>
+        <div>
+            <span>Respuesta</span>
+            <div>
+                <span>El año ingresado: </span>
+                <input type="text" id="leapYearResponse" disabled="disabled"> 
+            </div>
+        </div>
+    </div>
+    <div>
+        <form id="primeNumberForm">
+            <h2>4. Sumatoria de numeros primos</h2>
+            <span>Ingrese un número para calcular la suma de los numeros primos</span><br><br>
+            <input id="primeNumberInput" type="number" name="primeNumberInput" placeholder="7" required>
+            <input id="primeNumberButton" type="button" value="Verificar">
+        </form>
+        <div>
+            <span>Respuesta</span>
+            <div>
+                <span>La sumatoria del numero primo es: </span>
+                <input type="number" id="primeNumberResponse" disabled="disabled"> 
+                <div id="errorInput"></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/laboratorio3.js"></script>
+</body>
+
+</html>
