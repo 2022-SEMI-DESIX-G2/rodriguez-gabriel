@@ -4,26 +4,16 @@ document.getElementById("leapYearButton").addEventListener("click", verifyLeapYe
 document.getElementById("primeNumberButton").addEventListener("click", verifyPrimeNumber);
 function VerifyPalindrome() {
     var inputNumber = parseInt(document.getElementById("palindromeInput").value);
+    var stringNumber = String(inputNumber);
     var binaryNumber = inputNumber.toString(2);
-    var stringLength = 0;
-    var invertedInputNumber = "";
-    var invertedBinaryNumber = "";
-    stringLength = inputNumber.toString().length;
-    while (stringLength > 0) {
-        stringLength = stringLength - 1;
-        invertedInputNumber = invertedInputNumber + inputNumber.toString().charAt(stringLength);
-    }
-    stringLength = binaryNumber.length;
-    while (stringLength > 0) {
-        stringLength = stringLength - 1;
-        invertedBinaryNumber = invertedBinaryNumber + binaryNumber.charAt(stringLength);
-    }
-    if ((invertedInputNumber == inputNumber) && (invertedBinaryNumber == binaryNumber)) {
+    var invertedInputNumber = stringNumber.split("").reverse().join("");
+    var invertedBinaryNumber = binaryNumber.split("").reverse().join("");
+
+    if (invertedInputNumber === stringNumber && invertedBinaryNumber === binaryNumber) {
         enteredNumber.value = inputNumber;
         binaryPalindrome.value = binaryNumber;
         invertedPalindrome.value = "Si es palindromo de doble base";
-    }
-    else {
+    } else {
         enteredNumber.value = inputNumber;
         binaryPalindrome.value = binaryNumber;
         invertedPalindrome.value = "No es palindromo de doble base";
