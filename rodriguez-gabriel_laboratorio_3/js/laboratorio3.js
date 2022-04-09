@@ -51,9 +51,10 @@ function verifyLeapYear() {
 }
 function verifyPrimeNumber() {
     var primeNumberInput = parseInt(document.getElementById("primeNumberInput").value);
+    console.log(primeNumberInput)
     var primeNumberBase = 1;
     if(primeNumberInput >= 1 && primeNumberInput <= 1000000) {
-        document.getElementById('primosval').innerHTML = "";
+        document.getElementById('errorInput').innerHTML = "";
         for (let c = 2; c <= primeNumberInput; c++) {
             if (prime(c)) {
                 primeNumberBase = primeNumberBase + c;
