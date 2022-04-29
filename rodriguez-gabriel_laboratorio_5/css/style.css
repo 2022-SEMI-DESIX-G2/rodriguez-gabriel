@@ -1,0 +1,73 @@
+.fibonacciSectionClass,
+.fibonacciCardSectionClass {
+    margin-right: 24%;
+    margin-left: 24%;
+    margin-top: 2.5%;
+}
+
+.fibonacciFormClass {
+    background-color: #d3d0d3;
+    padding-left: 1.5em;
+    padding-bottom: 5em;
+    position: relative;
+}
+
+.fibonacciFormClass h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding-top: 1em;
+}
+
+.fibonacciFormClass p {
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 0.2em;
+}
+
+.fibonacciFormClass button {
+    background-color: rgba(175, 3, 3, 0.63);
+    color: white;
+    position: absolute;
+    right: 1em;
+    bottom: 1em;
+    width: 25%;
+    padding: 0.5%;
+}
+
+.fibonacciCardSectionClass {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cardClass {
+    background-color: #d3d0d3;
+    display: flex;
+    justify-content: center;
+    border: 1px solid grey;
+    padding: 1rem;
+    flex: 0 0 6%;
+    margin-bottom: 3%;
+    cursor: pointer;
+    position: relative;
+}
+
+.cardClass:hover {
+    box-shadow: 0 1em 1em 0 rgba(61, 61, 61, 0.411);
+}
+
+.cardClass:hover::after {
+    z-index:1;
+    position: absolute;
+    display: block;
+    height: 50%;
+    width: 30%;
+    top: -20%;
+    right: -20%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: rgba(175, 3, 3, 0.63);
+    color: white;
+    content: "x";
+    text-align: center;
+    font-size: 1.2em;
+}
