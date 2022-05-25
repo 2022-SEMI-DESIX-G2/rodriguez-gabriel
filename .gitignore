@@ -1,2 +1,4 @@
 # IDE - VSCode
 .vscode/*
+
+node_modules/
