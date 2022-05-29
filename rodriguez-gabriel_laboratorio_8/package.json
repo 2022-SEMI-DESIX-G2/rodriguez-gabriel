@@ -1,0 +1,19 @@
+{
+  "name": "rodriguez-gabriel_laboratorio_8",
+  "version": "0.0.1",
+  "description": "- Resolver problemas de lógica matemática utilizando Javascript.\r - Utilizar controles de flujo, ciclos y demás herramientas básicas del lenguaje Javascript.\r - Desarrollar una aplicación usando NodeJS.\r - Consumir endpoints usando axios dentro de NodeJS.",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
