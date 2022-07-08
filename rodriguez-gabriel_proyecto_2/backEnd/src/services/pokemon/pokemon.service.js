@@ -25,19 +25,12 @@ class PokemonService {
       this.#getPokemonLocation(pokemonData.id),
       this.#getPokemonSpecies(pokemonData.id),
     ]);
-    console.log("Entro 7")
     const pokemonEvolution = await this.#getEvolutionChain(pokemonSpecies.evolution_chain.url);
     response = mapperInstance.buildPokemonInfoResponse(pokemonData, pokemonLocation, pokemonEvolution);
-    console.log("cacheExpiration time: " + cacheExpiration);
     response['expirationTime'] = cacheExpiration;
     response['timestamp'] = currentTime;
-    console.log("Entro 8")
-    console.log("Entro 9")
     const pokemon = new PokemonModel(response);
-    console.log("save pokemon: "+ pokemon)
-
     await pokemon.save();
-    console.log("Entro 10")
     return { data: pokemon, isCached: false };
   }
   async #getPokemonData(value) {
