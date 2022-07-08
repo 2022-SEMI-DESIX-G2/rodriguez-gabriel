@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,600;0,900;1,700&display=swap');
+body {
+    background-image: url('../img/background.jpg');
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+a {
+    display: none;
+}
+
+h2 {
+    text-transform: uppercase;
+    margin-top: -0.3rem;
+}
+
+h1,
+h3,
+h4 {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 29.26px;
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 21.94px;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    font-size: 12px;
+    padding-top: 1rem;
+    line-height: 14.63px;
+}
+
+p {
+    font-family: 'Montserrat';
+    /* color: #3a3a3a; */
+    margin-block-start: 0.5rem;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16.63px;
+}
+
+form {
+    width: 100%;
+    margin-right: 0;
+    padding: 0;
+    margin: 0;
+}
+
+label {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18.63px;
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+
+input,
+select {
+    border: none;
+    background-color: #3a3a3a1f;
+    padding: 6px 0;
+    border-radius: 0.2rem;
+}
+
+input {
+    padding: 0.4rem;
+}
+
+select {
+    padding: 5px 0;
+}
+
+input,
+select:focus {
+    outline: 0;
+}
+
+input[type=checkbox] {
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+}
+
+ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 20px;
+    margin-bottom: 0.9rem;
+    list-style-type: none;
+}
+
+li {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 14.63px;
+    list-style: none;
+}
+
+svg {
+    position: absolute;
+    /* left: 10rem;
+    top: 16.2rem; */
+}
+
+button {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14.63px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(130, 179, 215);
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.section-form {
+    width: 99%;
+    margin: 0 auto;
+    margin-left: 0.8rem;
+    margin-top: 6rem;
+}
+
+.container {
+    position: relative;
+    height: auto;
+    width: 38%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    border-radius: 10px;
+    background: #ffffffc2;
+    padding: 2rem 2rem;
+    /* padding-bottom: 1rem; */
+}
+
+.logo {
+    position: absolute;
+    left: 12.3rem;
+    top: -4.3rem;
+}
+
+.container-info-form {
+    margin: 2rem;
+}
+
+.form-container {
+    display: flex;
+    width: 100%;
+}
+
+.data-form {
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.data-form>input {
+    /* max-width: 14.6rem; */
+    width: 100%;
+}
+
+.data-form>select {
+    max-width: 16rem;
+}
+
+.second-data-form {
+    margin-left: 0.5rem;
+}
+
+.buttons-form {
+    background-color: rgba(13, 153, 255, 1);
+    border: none;
+    width: 17%;
+    border-radius: 0.2rem;
+    padding: 0.3rem;
+    color: #ffffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.click-button-hidden {
+    display: none;
+}
+
+.click-button-visible {
+    display: block;
+}
+
+.buttons-form-visible-buttons {
+    flex-direction: row;
+}
+
+.img-baby {
+    height: 0.9rem;
+    width: 0.9rem;
+}
+
+.img-not-found {
+    height: 10rem;
+    width: 10rem;
+}
+
+.scroll-container {
+    display: block;
+    width: 25rem;
+    /* min-height: 8rem;
+    max-height: 8rem; */
+    /* overflow: auto;
+    overflow-y: auto;
+    scroll-behavior: auto; */
+}
+
+.scroll-evolutions {
+    width: auto;
+}
+
+.h-w {
+    margin-bottom: 2rem;
+}
+
+.err {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    color: red;
+    font-size: 0.7rem;
+    margin-left: 0.1rem;
+}
+
+.button-response {
+    width: 99%;
+    height: 4rem;
+    margin-bottom: 1rem;
+    padding: 0;
+    border: none;
+    font-weight: 600;
+    font-size: 20px;
+    background-color: rgba(13, 153, 255, 1);
+    color: #ffffffff;
+    border-radius: 10px;
+}
+
+.last-button-response {
+    width: 99%;
+    height: 4rem;
+    padding: 0;
+    border: none;
+    font-weight: 600;
+    font-size: 20px;
+    background-color: rgba(13, 153, 255, 1);
+    color: #ffffffff;
+    border-radius: 10px;
+}
+
+.button-response:hover {
+    cursor: pointer;
+    background-color: rgb(130, 179, 215);
+}
+
+.button-response:nth-last-child(3) {
+    margin-bottom: 0;
+}
+
+.pokemon {
+    position: absolute;
+    left: 16.3rem;
+    top: -7.3rem;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+img.pokemon {
+    object-fit: cover;
+}

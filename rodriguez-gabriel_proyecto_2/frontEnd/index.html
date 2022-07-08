@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:700,300,400,900">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Proyecto #1</title>
+</head>
+
+<body>
+    <section id="section-form" class="section-form">
+        <section class="container">
+            <div class="container-info-form">
+                <img class="logo" src="https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png">
+                <h1>Buscador de pokemones <a href="http://"><i class="fa-brands fa-github"></i></a></h1>
+                <p>Busca desde pokemones hasta las habilidades de los mismos.</p>
+                <form id="pokemon-finder-form" action="" method="post">
+                    <input type="checkbox" id="checkbox-sprites" name="sprites" value="sprites">
+                    <label for="sprites"> Sprites</label>
+                    <input type="checkbox" id="checkbox-location" name="location" value="locations">
+                    <label for="location"> Ubicación</label>
+                    <input type="checkbox" id="checkbox-evo-chain" name="evo-chain" value="evo-chain">
+                    <label for="evo-chain"> Cádena de evolución</label>
+                    <section class="form-container">
+                        <section class="data-form">
+                            <input type="text" name="search" id="input-finder-query" placeholder="Buscar...">
+                            <button class="buttons-form" type="submit">Buscar</button>
+                        </section>
+                    </section>
+                    <div id="div-exception-input"></div>
+                </form>
+            </div>
+        </section>
+
+    </section>
+
+    <section id="section-stats-response" class="section-form">
+
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/utils.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
